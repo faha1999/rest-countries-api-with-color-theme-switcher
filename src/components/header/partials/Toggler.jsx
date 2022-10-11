@@ -7,13 +7,13 @@ export default function Toggle() {
     setDarkMode(!darkMode);
   };
   return (
-    <div className="toggle" onClick={changeTheme}>
+    <div className="toggler" onClick={changeTheme}>
       {darkMode ? (
-        <div className="toggle-light">
+        <div className="toggleLight">
           <FaSun /> <p>Light Mode</p>
         </div>
       ) : (
-        <div className="toggle-dark">
+        <div className="toggleDark">
           <FaMoon />
           <p>Dark Mode</p>
         </div>

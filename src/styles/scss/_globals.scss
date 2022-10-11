@@ -30,6 +30,7 @@ body {
   font-family: 'Nunito Sans', sans-serif;
   color: $very-dark-blue;
   background: $very-light-gray;
+  font-size: $fs-home;
 
   &.dark {
     color: $white;
@@ -122,4 +123,29 @@ body {
   @include media-lg() {
     padding: 0 100px;
   }
+}
+
+img {
+  display: block;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-size: 1.2rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+input[type='search']::-webkit-search-decoration,
+input[type='search']::-webkit-search-cancel-button,
+input[type='search']::-webkit-search-results-button,
+input[type='search']::-webkit-search-results-decoration {
+  display: none;
 }
