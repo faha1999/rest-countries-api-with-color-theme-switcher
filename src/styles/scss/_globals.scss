@@ -1,0 +1,125 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+input,
+button {
+  color: inherit;
+  font-family: inherit;
+  border: 0;
+}
+
+html {
+  @supports (scrollbar-width: thin) {
+    scrollbar-width: thin;
+    scrollbar-color: #575c70 transparent;
+  }
+}
+
+body {
+  font-weight: $fw-regular;
+  font-family: 'Nunito Sans', sans-serif;
+  color: $very-dark-blue;
+  background: $very-light-gray;
+
+  &.dark {
+    color: $white;
+    background: $very-dark-blue-background;
+
+    &::-webkit-scrollbar-thumb {
+      background: hsl(209, 24%, 87%);
+    }
+  }
+
+  &::-webkit-scrollbar {
+    width: 5px;
+
+    &-thumb {
+      border-radius: 40px;
+      background: hsl(0, 0%, 0%);
+    }
+  }
+}
+
+// selection
+
+::selection {
+  color: $white;
+  background: $very-dark-blue-background;
+}
+
+.dark {
+  ::selection {
+    color: $very-dark-blue;
+    background: $very-light-gray;
+  }
+}
+
+// focus
+
+*:focus {
+  border-radius: 5px;
+  outline: 2px solid $very-dark-blue;
+}
+
+.dark {
+  *:focus {
+    outline-color: $white;
+  }
+}
+
+// components
+
+.search-filters-container {
+  margin-top: 30px;
+  padding: 0 15px;
+
+  @include media-sm() {
+    padding: 0 25px;
+  }
+
+  @include media-md() {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    padding: 0 35px;
+  }
+
+  @include media-lg() {
+    margin-top: 60px;
+    padding: 0 100px;
+  }
+}
+
+.countries-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 0 15px;
+  margin-block: 60px;
+
+  @include media-sm() {
+    justify-content: space-between;
+    padding: 0 25px;
+  }
+
+  @include media-md() {
+    gap: 70px;
+    padding: 0 35px;
+  }
+
+  @include media-lg() {
+    padding: 0 100px;
+  }
+}
