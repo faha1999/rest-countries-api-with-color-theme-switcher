@@ -3,7 +3,8 @@
 *::after {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
+  //box-sizing: border-box;
+  font-family: 'Nunito Sans', sans-serif;
 }
 
 a {
@@ -27,7 +28,6 @@ html {
 
 body {
   font-weight: $fw-regular;
-  font-family: 'Nunito Sans', sans-serif;
   color: $very-dark-blue;
   background: $very-light-gray;
   font-size: $fs-home;
