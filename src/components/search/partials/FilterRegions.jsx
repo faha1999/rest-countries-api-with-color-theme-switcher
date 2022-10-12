@@ -23,12 +23,12 @@ export const FilterRegions = (props) => {
 
   const fetchRegion = async (regionName) => {
     if (regionName === 'all') {
-      const url = `https://restcountries.com/v2/all`;
+      const url = `https://restcountries.com/v3.1/all`;
       const response = await fetch(url);
       const data = await response.json();
       props.setCountries(data);
     } else {
-      const url = `https://restcountries.com/v2/region/${regionName}`;
+      const url = `https://restcountries.com/v3.1/region/${regionName}`;
       const response = await fetch(url);
       const data = await response.json();
       props.setCountries(data);
@@ -43,7 +43,7 @@ export const FilterRegions = (props) => {
 
   return (
     <section
-      className={isVisible ? 'active-regions select-region' : 'select-region'}
+      className={isVisible ? 'activeRegions selectRegion' : 'selectRegion'}
       id="regions"
     >
       <summary onClick={(e) => addDropdown(e)}>
@@ -52,7 +52,7 @@ export const FilterRegions = (props) => {
           : activeRegion}
       </summary>
       {isVisible ? (
-        <div className="region-list">
+        <div className="regionList">
           {regions.map((region) => (
             <li
               onClick={() => {
