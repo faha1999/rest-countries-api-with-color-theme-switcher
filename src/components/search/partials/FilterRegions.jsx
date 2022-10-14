@@ -23,17 +23,18 @@ export const FilterRegions = (props) => {
 
   const fetchRegion = async (regionName) => {
     if (regionName === 'all') {
-      const url = `https://restcountries.com/v3.1/all`;
+      const url = `https://restcountries.com/v2/all`;
       const response = await fetch(url);
       const data = await response.json();
       props.setCountries(data);
     } else {
-      const url = `https://restcountries.com/v3.1/region/${regionName}`;
+      const url = `https://restcountries.com/v2/region/${regionName}`;
       const response = await fetch(url);
       const data = await response.json();
       props.setCountries(data);
     }
   };
+
   const addDropdown = () => {
     return isVisible ? setVisibility(false) : setVisibility(true);
   };
