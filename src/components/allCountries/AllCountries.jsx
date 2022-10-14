@@ -4,13 +4,13 @@ import { motion } from 'framer-motion';
 
 export const AllCountries = (props) => {
   return (
-    <section className="container-block">
+    <section className="container">
       {props.countries.map(
         ({ name, population, region, capital, flags, index }) => (
           <Link
             key={name}
             to={`/${name.toLowerCase().replace(/\s/g, '%20')}`}
-            className="inside-container"
+            className="insideContainer"
           >
             <motion.div
               initial={{
@@ -26,28 +26,25 @@ export const AllCountries = (props) => {
               transition={{
                 delay: index * 0.02,
               }}
-              whileHover={{
-                translateY: -10,
-              }}
             >
-              <section className="image-container">
+              <section className="imageContainer">
                 <img
                   className="image"
                   src={flags ? flags.svg : flags.png}
                   alt=""
                 />
               </section>
-              <section className="info-block">
-                <h2 className="info-block-h2"> {name}</h2>
+              <section className="infoSection">
+                <h2 className="countryName"> {name}</h2>
                 <section>
-                  <p className="p">
+                  <p>
                     <span className="category">Population:</span>
                     {population.toLocaleString()}
                   </p>
-                  <p className="p">
+                  <p>
                     <span className="category">Region:</span> {region}
                   </p>
-                  <p className="p">
+                  <p>
                     <span className="category">Capital:</span> {capital}
                   </p>
                 </section>

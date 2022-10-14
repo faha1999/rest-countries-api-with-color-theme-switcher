@@ -149,3 +149,12 @@ input[type='search']::-webkit-search-results-button,
 input[type='search']::-webkit-search-results-decoration {
   display: none;
 }
+
+.searching {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 2rem;
+  letter-spacing: 1px;
+  font-weight: 400;
+  margin-top: 5%;
+}

@@ -4,14 +4,14 @@ import { Link } from 'react-router-dom';
 
 export const FilteredCountries = (props) => {
   return (
-    <section className="container-block">
+    <section className="container">
       {props.foundFilter ? (
         props.filtered?.map(
           ({ name, population, region, capital, flags, index }) => (
             <Link
               key={name}
               to={`/${name.toLowerCase().replace(/\s/g, '%20')}`}
-              className="inside-container"
+              className="insideContainer"
             >
               <motion.div
                 initial={{
@@ -27,24 +27,21 @@ export const FilteredCountries = (props) => {
                 transition={{
                   delay: index * 0.02,
                 }}
-                whileHover={{
-                  translateY: -10,
-                }}
               >
                 <section>
-                  <section className="image-container">
+                  <section className="imageContainer">
                     <img className="image" src={flags.png} alt="flag" />
                   </section>
-                  <section className="info-block">
-                    <h2 className="info-block-h2">{name}</h2>
-                    <p className="p">
+                  <section className="infoSection">
+                    <h2 className="countryName">{name}</h2>
+                    <p>
                       <span className="category">Population:</span>{' '}
                       {population.toLocaleString()}
                     </p>
-                    <p className="p">
+                    <p>
                       <span className="category">Region:</span> {region}
                     </p>
-                    <p className="p">
+                    <p>
                       <span className="category">Capital:</span> {capital}
                     </p>
                   </section>
