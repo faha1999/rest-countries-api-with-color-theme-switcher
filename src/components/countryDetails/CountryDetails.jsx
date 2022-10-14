@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { AnimatePresence, motion } from 'framer-motion';
+import { LoadingDetails } from '../LoadingDetails';
 
 export const CountryDetails = () => {
   const [country, setCountry] = useState([]);
@@ -40,9 +41,7 @@ export const CountryDetails = () => {
   return (
     <main>
       {isLoading ? (
-        <h2 animate={{ opacity: 1 }} className="searching">
-          Searching...
-        </h2>
+        <LoadingDetails />
       ) : (
         <AnimatePresence>
           <Link to="/" className="backBtn">

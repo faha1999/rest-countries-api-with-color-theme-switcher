@@ -54,7 +54,7 @@ export const Countries = () => {
   return (
     <main>
       {isLoading ? (
-        <h2 className="searching">Searching...</h2>
+        <h2 className="searching">Loading...</h2>
       ) : (
         <>
           <Search

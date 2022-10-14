@@ -1,0 +1,50 @@
+.error {
+  width: 100%;
+  text-align: center;
+  display: block;
+
+  &--information {
+    h1 {
+      font-size: 3rem;
+      font-weight: $fw-bold;
+
+      span {
+        display: inline-block;
+        transform: rotate(30deg);
+        margin-left: 8px;
+      }
+    }
+
+    p {
+      max-width: 300px;
+      margin: 5px 0 12px 3px;
+    }
+
+    button {
+      display: inline-block;
+      font-weight: $fw-medium;
+      padding: 15px 30px;
+      background: $white;
+      border-radius: 8px;
+      box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+    }
+  }
+
+  @media (min-width: 80rem) {
+    flex-direction: row;
+
+    &--information {
+      margin-top: 50px;
+      width: 100%;
+    }
+  }
+}
+
+.dark {
+  .error--information {
+    button {
+      background: $dark-blue;
+    }
+  }
+}

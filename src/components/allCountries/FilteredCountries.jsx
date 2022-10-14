@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
+import { Error } from '../Error';
 
 export const FilteredCountries = (props) => {
   return (
@@ -51,7 +52,7 @@ export const FilteredCountries = (props) => {
           ),
         )
       ) : (
-        <p>No countries found...</p>
+        <Error />
       )}
     </section>
   );
