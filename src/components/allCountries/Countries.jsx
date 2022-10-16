@@ -2,6 +2,11 @@ import React, { useEffect, useState } from 'react';
 import { AllCountries } from './AllCountries';
 import { FilteredCountries } from './FilteredCountries';
 import { Search } from '../search/Search';
+import { LoadingCard } from '../LoadingCard';
+
+const loadingData = [
+  1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+];
 
 export const Countries = () => {
   const url = `https://restcountries.com/v2/all`;
@@ -53,15 +58,17 @@ export const Countries = () => {
 
   return (
     <main>
+      <Search
+        searchCountries={searchCountries}
+        searchInput={searchInput}
+        setCountries={setCountries}
+      />
+
       {isLoading ? (
         <h2 className="searching">Loading...</h2>
       ) : (
+        //loadingData.map((data) => <LoadingCard key={data} />)
         <>
-          <Search
-            searchCountries={searchCountries}
-            searchInput={searchInput}
-            setCountries={setCountries}
-          />
           {searchInput.length > 0 ? (
             <FilteredCountries filtered={filtered} foundFilter={foundFilter} />
           ) : (
