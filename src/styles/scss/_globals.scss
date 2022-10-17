@@ -31,15 +31,6 @@ body {
   background: $very-light-gray;
   font-size: $fs-home;
 
-  &.dark {
-    color: $white;
-    background: $very-dark-blue-background;
-
-    &::-webkit-scrollbar-thumb {
-      background: hsl(209, 24%, 87%);
-    }
-  }
-
   &::-webkit-scrollbar {
     width: 5px;
 
