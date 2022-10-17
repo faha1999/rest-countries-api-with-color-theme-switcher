@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { AnimatePresence, motion } from 'framer-motion';
 import { LoadingDetails } from '../LoadingDetails';
+import { BsArrowLeft } from 'react-icons/bs';
 
 export const CountryDetails = () => {
   const [country, setCountry] = useState([]);
@@ -45,7 +46,10 @@ export const CountryDetails = () => {
       ) : (
         <AnimatePresence>
           <Link to="/" className="backBtn">
-            <span>&larr;</span> Back
+            <span>
+              <BsArrowLeft />
+            </span>{' '}
+            Back
           </Link>
           <section key={name} className="countryDetails">
             <motion.img

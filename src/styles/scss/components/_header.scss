@@ -2,10 +2,12 @@ nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 0.3rem 5.1rem;
+  padding: 1.3rem 5.1rem;
   -webkit-box-shadow: rgb(0 0 0 / 3%) 0px 0px 3px 3px;
   box-shadow: rgb(0 0 0 / 3%) 0px 0px 3px 3px;
   background-color: $white;
+  position: sticky;
+  position: -webkit-sticky;
 }
 
 .toggleLight,
@@ -18,4 +20,22 @@ nav {
   font-size: 1rem;
   font-weight: 600;
   margin-top: 0.5rem;
+}
+
+@media screen and (max-width: 600px) {
+  nav {
+    padding: 1.5rem;
+
+    a {
+      h1 {
+        margin-top: 0.4rem;
+        font-size: 1.2rem;
+      }
+    }
+  }
+
+  .toggleLight,
+  .toggleDark {
+    font-size: 0.9rem;
+  }
 }

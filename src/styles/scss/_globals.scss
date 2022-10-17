@@ -3,7 +3,6 @@
 *::after {
   padding: 0;
   margin: 0;
-  //box-sizing: border-box;
   font-family: 'Nunito Sans', sans-serif;
 }
 
@@ -62,19 +61,6 @@ body {
   ::selection {
     color: $very-dark-blue;
     background: $very-light-gray;
-  }
-}
-
-// focus
-
-*:focus {
-  border-radius: 5px;
-  outline: 2px solid $very-dark-blue;
-}
-
-.dark {
-  *:focus {
-    outline-color: $white;
   }
 }
 

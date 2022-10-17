@@ -5,7 +5,7 @@ import Toggle from './partials/Toggler';
 export const Header = () => {
   return (
     <>
-      <header>
+      <header style={{ position: 'sticky', top: '0' }}>
         <nav>
           <Link to="/">
             <h1>Where in the world?</h1>

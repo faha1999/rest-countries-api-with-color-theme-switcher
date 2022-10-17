@@ -47,7 +47,7 @@
     }
   }
 
-  @media (min-width: 31rem) {
+  @media (min-width: 496px) {
     &--flag {
       width: 50%;
 
@@ -57,17 +57,17 @@
     }
   }
 
-  @media (min-width: 47em) {
+  @media (min-width: 752px) {
     &--details {
       &--columns {
-        margin-block: 30px;
+        //margin-block: 30px;
         gap: 80px;
         flex-direction: row;
       }
     }
   }
 
-  @media (min-width: 80rem) {
+  @media (min-width: 1280px) {
     display: flex;
     align-items: center;
     gap: 100px;
@@ -87,7 +87,7 @@
     }
   }
 
-  @media (min-width: 97rem) {
+  @media (min-width: 1552px) {
     gap: 150px;
   }
 

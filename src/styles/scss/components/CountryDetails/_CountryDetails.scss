@@ -18,8 +18,8 @@
   font-weight: 400;
 
   span {
-    font-size: 1.7rem;
-    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
   }
 }
 
@@ -91,6 +91,43 @@
         cursor: pointer;
         font-size: 0.7rem;
         transition: all ease-in-out 0.3s;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  .countryDetails {
+    align-items: center;
+    grid-template-columns: 1fr;
+
+    .borderCountries {
+      gap: 15px;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .backBtn {
+    margin-top: 3rem;
+    margin-left: 1.5rem;
+    padding: 0.3rem 0rem;
+    font-size: 0.9rem;
+    height: 7%;
+    width: 8rem;
+    gap: 0.7rem;
+
+    span {
+      font-size: 1rem;
+      margin-top: 0.3rem;
+    }
+  }
+
+  .countryDetails {
+    .countryDetailsInfo {
+      .detailsSection {
+        flex-direction: column;
+        gap: 1.5rem;
       }
     }
   }
