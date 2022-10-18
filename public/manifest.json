@@ -1,9 +1,9 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "faha1999",
+  "name": "REST Countries API with color theme switcher solution by Kawsar Ahmed fahad (faha1999) build with reactjs and API",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "favicon-32x32.png",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },

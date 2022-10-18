@@ -27,6 +27,10 @@
       background-color: $white;
       border-radius: 10px;
 
+      &:focus-visible {
+        outline: none;
+      }
+
       &::placeholder {
         opacity: 0.4;
         font-size: 0.9rem;
