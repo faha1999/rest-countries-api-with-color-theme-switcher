@@ -31,7 +31,7 @@ export const AllCountries = (props) => {
                 <img
                   className="image"
                   src={flags ? flags.svg : flags.png}
-                  alt=""
+                  alt={name}
                 />
               </section>
               <section className="infoSection">
