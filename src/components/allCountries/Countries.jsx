@@ -52,7 +52,7 @@ export const Countries = () => {
   };
 
   return (
-    <main>
+    <>
       <Search
         searchCountries={searchCountries}
         searchInput={searchInput}
@@ -70,6 +70,6 @@ export const Countries = () => {
           )}
         </>
       )}
-    </main>
+    </>
   );
 };
