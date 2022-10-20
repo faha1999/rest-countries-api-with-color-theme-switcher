@@ -43,7 +43,7 @@ export const FilterRegions = (props) => {
   };
 
   return (
-    <section
+    <div
       className={isVisible ? 'activeRegions selectRegion' : 'selectRegion'}
       id="regions"
     >
@@ -69,6 +69,6 @@ export const FilterRegions = (props) => {
           ))}
         </div>
       ) : null}
-    </section>
+    </div>
   );
 };

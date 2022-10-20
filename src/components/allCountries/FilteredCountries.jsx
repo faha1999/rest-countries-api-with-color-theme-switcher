@@ -29,10 +29,10 @@ export const FilteredCountries = (props) => {
                   delay: index * 0.02,
                 }}
               >
-                <section>
-                  <section className="imageContainer">
+                <div>
+                  <div className="imageContainer">
                     <img className="image" src={flags.png} alt="flag" />
-                  </section>
+                  </div>
                   <section className="infoSection">
                     <h2 className="countryName">{name}</h2>
                     <p>
@@ -46,7 +46,7 @@ export const FilteredCountries = (props) => {
                       <span className="category">Capital:</span> {capital}
                     </p>
                   </section>
-                </section>
+                </div>
               </motion.div>
             </Link>
           ),

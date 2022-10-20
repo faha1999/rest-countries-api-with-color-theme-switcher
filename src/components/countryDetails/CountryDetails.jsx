@@ -51,7 +51,7 @@ export const CountryDetails = () => {
             </span>{' '}
             Back
           </Link>
-          <section key={name} className="countryDetails">
+          <div key={name} className="countryDetails">
             <motion.img
               initial={{
                 opacity: 0,
@@ -73,9 +73,9 @@ export const CountryDetails = () => {
               alt={name}
             />
 
-            <section className="countryDetailsInfo">
+            <div className="countryDetailsInfo">
               <h2>{name}</h2>
-              <section className="detailsSection">
+              <div className="detailsSection">
                 <ul className="left">
                   <li>
                     <span>Native Name:</span> {country.nativeName}
@@ -105,9 +105,9 @@ export const CountryDetails = () => {
                     <span>Languages:</span> {country.languages[0].name}
                   </li>
                 </ul>
-              </section>
+              </div>
 
-              <section className="borderCountries">
+              <div className="borderCountries">
                 <p className="title">Border Countries:</p>
                 {borderCountries?.length ? (
                   borderCountries.map((country, index) => (
@@ -137,9 +137,9 @@ export const CountryDetails = () => {
                 ) : (
                   <p>No Borders...</p>
                 )}
-              </section>
-            </section>
-          </section>
+              </div>
+            </div>
+          </div>
         </AnimatePresence>
       )}
     </main>

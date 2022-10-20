@@ -5,7 +5,7 @@ import { FilterRegions } from './partials/FilterRegions';
 export const Search = (props) => {
   return (
     <article className="searchSection">
-      <section className="inputArea">
+      <div className="inputArea">
         <FaSearch className="searchIcon" />
         <input
           type="search"
@@ -15,7 +15,7 @@ export const Search = (props) => {
           value={props.searchInput}
           onChange={(e) => props.searchCountries(e.target.value)}
         ></input>
-      </section>
+      </div>
       <FilterRegions setCountries={props.setCountries} />
     </article>
   );

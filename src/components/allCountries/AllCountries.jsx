@@ -27,16 +27,16 @@ export const AllCountries = (props) => {
                 delay: index * 0.02,
               }}
             >
-              <section className="imageContainer">
+              <div className="imageContainer">
                 <img
                   className="image"
                   src={flags ? flags.svg : flags.png}
                   alt={name}
                 />
-              </section>
+              </div>
               <section className="infoSection">
                 <h2 className="countryName"> {name}</h2>
-                <section>
+                <div>
                   <p>
                     <span className="category">Population:</span>
                     {population.toLocaleString()}
@@ -47,7 +47,7 @@ export const AllCountries = (props) => {
                   <p>
                     <span className="category">Capital:</span> {capital}
                   </p>
-                </section>
+                </div>
               </section>
             </motion.div>
           </Link>
