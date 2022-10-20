@@ -16,7 +16,7 @@
     }
 
     p {
-      max-width: 300px;
+      // max-width: 300px;
       margin: 5px 0 12px 3px;
     }
 
@@ -30,15 +30,6 @@
       cursor: pointer;
     }
   }
-
-  @media (min-width: 80rem) {
-    flex-direction: row;
-
-    &--information {
-      margin-top: 50px;
-      width: 100%;
-    }
-  }
 }
 
 .dark {
@@ -46,5 +37,22 @@
     button {
       background: $dark-blue;
     }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .error {
+    min-width: 1024px;
+
+    &--information {
+      margin-top: 4rem;
+      text-align: center;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .error {
+    min-width: 700px;
   }
 }

@@ -9,8 +9,8 @@ export const App = () => {
     <>
       <Header />
       <Routes>
-        <Route exact path="/" element={<Countries />} />
-        <Route path="/:name" exact element={<CountryDetails />} />
+        <Route path="/" element={<Countries />} />
+        <Route path="/:name" element={<CountryDetails />} />
       </Routes>
     </>
   );
