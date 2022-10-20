@@ -57,7 +57,7 @@
   box-shadow: rgb(0 0 0 / 3%) 0px 0px 3px 3px;
   background-color: $white;
 
-  caption {
+  span {
     padding: 1.3rem 0.8rem;
     cursor: pointer;
     border-radius: 5px;
@@ -118,7 +118,7 @@
   }
 }
 
-.activeRegions.selectRegion summary:after {
+.activeRegions.selectRegion span:after {
   transform: rotate(-45deg) translate(50%, 0);
   transition: all ease-in-out 0.3s;
 }
