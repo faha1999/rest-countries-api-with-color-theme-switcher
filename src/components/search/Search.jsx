@@ -4,7 +4,7 @@ import { FilterRegions } from './partials/FilterRegions';
 
 export const Search = (props) => {
   return (
-    <article className="searchSection">
+    <div className="searchSection">
       <div className="inputArea">
         <FaSearch className="searchIcon" />
         <input
@@ -17,6 +17,6 @@ export const Search = (props) => {
         ></input>
       </div>
       <FilterRegions setCountries={props.setCountries} />
-    </article>
+    </div>
   );
 };

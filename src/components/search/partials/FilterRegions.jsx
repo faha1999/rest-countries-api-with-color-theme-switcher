@@ -47,11 +47,11 @@ export const FilterRegions = (props) => {
       className={isVisible ? 'activeRegions selectRegion' : 'selectRegion'}
       id="regions"
     >
-      <summary onClick={(e) => addDropdown(e)}>
+      <caption onClick={(e) => addDropdown(e)}>
         {activeRegion === 'All' || !activeRegion
           ? 'Filter by Region'
           : activeRegion}
-      </summary>
+      </caption>
       {isVisible ? (
         <div className="regionList">
           {regions.map((region) => (

@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 export const AllCountries = (props) => {
   return (
-    <section className="container">
+    <div className="container">
       {props.countries.map(
         ({ name, population, region, capital, flags, index }) => (
           <Link
@@ -53,6 +53,6 @@ export const AllCountries = (props) => {
           </Link>
         ),
       )}
-    </section>
+    </div>
   );
 };
